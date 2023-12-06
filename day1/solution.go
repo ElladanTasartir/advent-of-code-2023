@@ -62,7 +62,6 @@ func getCalibrationValueFromText(text string, calibrationChan chan int) {
 		if !foundSecond {
 			value, err := strconv.Atoi(string(text[j]))
 			if err == nil {
-				fmt.Println("entrei")
 				calibration += value
 				foundSecond = true
 			}
